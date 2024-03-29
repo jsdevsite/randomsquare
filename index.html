@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap" rel="stylesheet">
+<style>
+body {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+p {
+  font-weight: bold;
+  margin: .4em;
+}
+canvas {
+  border: solid;
+  margin-bottom: .5em;
+}
+button {
+  font-size: 110%;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<h1>A randomly shaded square</h1>
+
+<canvas id="myCanvas" width="200" height="200"></canvas>
+
+<p>Shading:</p>
+<input type="radio" id="colour" name="colour_selection">Colour</input>
+<input type="radio" id="greyscale" name="colour_selection">Greyscale</input>
+
+<p>Density:</p>
+<input type="radio" id="1x1" name="density_selection">1x1</input>
+<input type="radio" id="2x2" name="density_selection">2x2</input>
+<input type="radio" id="4x4" name="density_selection">4x4</input><br>
+<input type="radio" id="5x5" name="density_selection">5x5</input>
+<input type="radio" id="10x10" name="density_selection">10x10</input>
+<input type="radio" id="20x20" name="density_selection">20x20</input>
+
+<button onclick="startPage()">Shade square</button>
+
+<script>
+const _0x1ad244=_0x1d7c;(function(_0x382855,_0x1e59ed){const _0x2632d4=_0x1d7c,_0x24fbd3=_0x382855();while(!![]){try{const _0x719832=parseInt(_0x2632d4(0x175))/0x1*(parseInt(_0x2632d4(0x16e))/0x2)+parseInt(_0x2632d4(0x167))/0x3*(parseInt(_0x2632d4(0x17c))/0x4)+parseInt(_0x2632d4(0x176))/0x5+-parseInt(_0x2632d4(0x177))/0x6+parseInt(_0x2632d4(0x16f))/0x7+parseInt(_0x2632d4(0x16a))/0x8+parseInt(_0x2632d4(0x165))/0x9*(-parseInt(_0x2632d4(0x16d))/0xa);if(_0x719832===_0x1e59ed)break;else _0x24fbd3['push'](_0x24fbd3['shift']());}catch(_0x14cf5a){_0x24fbd3['push'](_0x24fbd3['shift']());}}}(_0x27b3,0x9a96f),document['getElementById']('1x1')[_0x1ad244(0x173)]=!![],document[_0x1ad244(0x170)](_0x1ad244(0x179))[_0x1ad244(0x173)]=!![]);function _0x1d7c(_0x409b04,_0x1efe88){const _0x27b368=_0x27b3();return _0x1d7c=function(_0x1d7c0d,_0x2df2c0){_0x1d7c0d=_0x1d7c0d-0x165;let _0x43b30f=_0x27b368[_0x1d7c0d];return _0x43b30f;},_0x1d7c(_0x409b04,_0x1efe88);}function startPage(){const _0x5d71e8=_0x1ad244;function _0x4a8ad2(_0x243e0a,_0x10c137){const _0x560010=_0x1d7c;return Math[_0x560010(0x17a)]()*(_0x10c137-_0x243e0a)+_0x243e0a;};let _0x551523=0x190,_0x2909a4=document[_0x5d71e8(0x170)]('myCanvas'),_0x53ff67=[],_0x34ed6b,_0x32bf0c=[...Array(_0x551523)['keys']()];for(_0x34ed6b of _0x32bf0c){let _0x5869df=0x0,_0x509a75=0x0,_0x486ec3=Math[_0x5d71e8(0x171)](_0x4a8ad2(0x0,0x100)),_0x166bd6=Math[_0x5d71e8(0x171)](_0x4a8ad2(0x0,0x100)),_0x1f6960=Math[_0x5d71e8(0x171)](_0x4a8ad2(0x0,0x100)),_0xd479ac=Math[_0x5d71e8(0x171)](_0x4a8ad2(0x0,0x100)),_0x16db9f=document[_0x5d71e8(0x17b)](_0x5d71e8(0x16b)),_0x58c62e=document[_0x5d71e8(0x17b)](_0x5d71e8(0x168));_0x16db9f?_0x32bf0c[_0x34ed6b]=_0x5d71e8(0x16c)+_0x166bd6+',\x20'+_0x1f6960+',\x20'+_0xd479ac+')':_0x32bf0c[_0x34ed6b]=_0x5d71e8(0x16c)+_0x486ec3+',\x20'+_0x486ec3+',\x20'+_0x486ec3+')';let _0x31979e=document[_0x5d71e8(0x17b)](_0x5d71e8(0x174)),_0x24678b=document[_0x5d71e8(0x17b)](_0x5d71e8(0x178)),_0x346835=document['querySelector'](_0x5d71e8(0x169)),_0x541cef=document[_0x5d71e8(0x17b)]('input[id=\x225x5\x22]:checked'),_0x295f69=document['querySelector']('input[id=\x2210x10\x22]:checked'),_0x37abd7=document[_0x5d71e8(0x17b)]('input[id=\x2220x20\x22]:checked');if(_0x31979e)square_size=0xc8;else{if(_0x24678b)square_size=0x64;else{if(_0x346835)square_size=0x32;else{if(_0x541cef)square_size=0x28;else _0x295f69?square_size=0x14:square_size=0xa;}}}_0x53ff67[_0x34ed6b]=_0x2909a4['getContext']('2d'),_0x53ff67[_0x34ed6b][_0x5d71e8(0x166)](),_0x53ff67[_0x34ed6b]['fillStyle']=_0x32bf0c[_0x34ed6b],_0x53ff67[_0x34ed6b][_0x5d71e8(0x172)](_0x34ed6b*square_size,_0x509a75,square_size,square_size);while(_0x5869df<_0x551523){_0x5869df+=square_size*0x2,_0x509a75+=square_size,_0x53ff67[_0x34ed6b][_0x5d71e8(0x172)]((_0x34ed6b-_0x5869df)*square_size,_0x509a75,square_size,square_size);};};}function _0x27b3(){const _0x42087b=['getElementById','floor','fillRect','checked','input[id=\x221x1\x22]:checked','903670ssUJzB','1633460ZGJWKz','5094288unXZtX','input[id=\x222x2\x22]:checked','colour','random','querySelector','819776ChgfRp','9cvUWLI','beginPath','9VFBPPb','input[id=\x22greyscale\x22]:checked','input[id=\x224x4\x22]:checked','3973168Qzrgeh','input[id=\x22colour\x22]:checked','rgb(','14908560VVkkOp','2JdtvDl','4418841pxxyOO'];_0x27b3=function(){return _0x42087b;};return _0x27b3();};
+</script> 
+
+</body>
+</html>
